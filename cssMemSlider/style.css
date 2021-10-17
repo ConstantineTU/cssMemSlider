@@ -28,7 +28,7 @@ section {
 html,
 body {
 	min-width: 19rem;
-	background: url("img/backgrond.webp") no-repeat;
+	background: url("img/backgrond.webp") repeat-y;
 	background-size: 100% auto;
 	display: flex;
 	align-items: flex-start;
@@ -239,7 +239,10 @@ h1 {
 @media (max-width: 1700px) {
 	body {
 		background-size: cover;
-
+	}
+}
+@media (max-width: 1440px) {
+	body {
 		height: 100vh;
 	}
 }
