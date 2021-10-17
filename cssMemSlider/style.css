@@ -90,6 +90,7 @@ h6 {
 }
 .slider {
 	max-width: 40rem;
+	max-height: 96vh;
 	padding: 1.6rem 2.5rem;
 	border-radius: 2rem;
 
@@ -159,4 +160,28 @@ h6 {
 .slider-bullets-item:active .slider-bullet {
 	background: #e21a1a url("img/wig.jpg") center no-repeat;
 	background-size: cover;
+}
+#btn-1:checked ~ .slider-bullets-wrap .slider-bullets-item #bullet-1,
+#btn-2:checked ~ .slider-bullets-wrap .slider-bullets-item #bullet-2,
+#btn-3:checked ~ .slider-bullets-wrap .slider-bullets-item #bullet-3,
+#btn-4:checked ~ .slider-bullets-wrap .slider-bullets-item #bullet-4,
+#btn-5:checked ~ .slider-bullets-wrap .slider-bullets-item #bullet-5 {
+	background: url("img/1.webp") center no-repeat;
+	background-size: cover;
+}
+#btn-2:checked ~ .slider-description-wrap .slider-description,
+#btn-2:checked ~ .slider-pictures-wrap .slider-pictures-items {
+	margin-left: -100%;
+}
+#btn-3:checked ~ .slider-description-wrap .slider-description,
+#btn-3:checked ~ .slider-pictures-wrap .slider-pictures-items {
+	margin-left: -200%;
+}
+#btn-4:checked ~ .slider-description-wrap .slider-description,
+#btn-4:checked ~ .slider-pictures-wrap .slider-pictures-items {
+	margin-left: -300%;
+}
+#btn-5:checked ~ .slider-description-wrap .slider-description,
+#btn-5:checked ~ .slider-pictures-wrap .slider-pictures-items {
+	margin-left: -400%;
 }
