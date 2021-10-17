@@ -14,15 +14,15 @@
 <body>
 	<h1>CSS Mem-Slider</h1>
 	<div class="slider-wrap">
-
+		<input checked class="slider-btn" type="radio" name="meme" id="btn-1">
+		<input class="slider-btn" type="radio" name="meme" id="btn-2">
+		<input class="slider-btn" type="radio" name="meme" id="btn-3">
+		<input class="slider-btn" type="radio" name="meme" id="btn-4">
+		<input class="slider-btn" type="radio" name="meme" id="btn-5">
+		<input class="slider-btn" type="radio" name="meme" id="btn-6">
 		<div class="slider">
 
-			<input checked class="slider-btn" type="radio" name="meme" id="btn-1">
-			<input class="slider-btn" type="radio" name="meme" id="btn-2">
-			<input class="slider-btn" type="radio" name="meme" id="btn-3">
-			<input class="slider-btn" type="radio" name="meme" id="btn-4">
-			<input class="slider-btn" type="radio" name="meme" id="btn-5">
-			<input class="slider-btn" type="radio" name="meme" id="btn-6">
+
 
 			<div class="slider-pictures-wrap">
 				<div class="slider-pictures-items">
@@ -44,11 +44,7 @@
 					<p class="slider-text">Go-go-go!</p>
 					<p class="slider-text">Do you know the Way?</p>
 				</div>
-				<!-- <audio class="audio" controls="" loop>
-					<source src="audio/this-is-wonderful.mp3" type="audio/mp3; codecs=opus" />
-					<source src="audio/this-is-wonderful.ogg" type="audio/ogg; codecs=vorbis" />
-					<source src="audio/this-is-wonderful.mp3" type="audio/mpeg" />
-				</audio> -->
+
 			</div>
 
 			<div class="slider-bullets-wrap">
@@ -73,6 +69,11 @@
 			</div>
 
 		</div>
+		<audio id="audio" class="audio" controls="" loop>
+			<source src="audio/this-is-wonderful.opus" type="audio/ogg; codecs=opus" />
+			<source src="audio/this-is-wonderful.ogg" type="audio/ogg; codecs=vorbis" />
+			<source src="audio/this-is-wonderful.mp3" type="audio/mpeg" />
+		</audio>
 	</div>
 
 </body>
