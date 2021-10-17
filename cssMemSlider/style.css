@@ -28,10 +28,10 @@ section {
 html,
 body {
 	min-width: 19rem;
-	background: url("img/backgrond.jpg") no-repeat;
-	background-size: cover;
+	background: url("img/backgrond.webp") no-repeat;
+	background-size: 100% auto;
 	display: flex;
-	align-items: center;
+	align-items: flex-start;
 	justify-content: center;
 	width: 100%;
 	color: #fff;
@@ -85,9 +85,10 @@ h1 {
 	flex: 1 1 100%;
 	font-size: 5rem;
 	text-align: center;
+	align-self: center;
 }
 .slider-wrap {
-	background: url("img/pepe.jpg");
+	background: url("img/pepe.webp");
 	background-size: contain;
 	border-radius: 2rem;
 	margin: 2rem;
@@ -111,7 +112,7 @@ h1 {
 	width: 100%;
 	flex: 1 1 100%;
 	margin: 0 auto;
-	background: url("img/pepe.jpg");
+	background: url("img/pepe.webp");
 	display: none;
 }
 .slider-btn {
@@ -173,17 +174,17 @@ h1 {
 	border: 0.1rem solid #e21a1a;
 }
 .slider-bullets-item:hover .slider-bullet {
-	background: #fff url("img/mqdefault.jpg") center no-repeat;
+	background: #fff url("img/mqdefault.webp") center no-repeat;
 	background-size: cover;
 	border: 0.15rem solid #d10fa1;
 }
 .slider-bullets-item:hover #bullet-6 {
-	background: #fff url("img/memes.jpg") center no-repeat;
+	background: #fff url("img/memes.webp") center no-repeat;
 	background-size: cover;
 	border: 0.2rem solid #14af21;
 }
 .slider-bullets-item:active .slider-bullet {
-	background: #e21a1a url("img/wig.jpg") center no-repeat;
+	background: #e21a1a url("img/wig.webp") center no-repeat;
 	background-size: cover;
 }
 .slider-bullets-item:active #bullet-6 {
@@ -197,7 +198,7 @@ h1 {
 #btn-3:checked ~ .slider .slider-bullets-wrap .slider-bullets-item #bullet-3,
 #btn-4:checked ~ .slider .slider-bullets-wrap .slider-bullets-item #bullet-4,
 #btn-5:checked ~ .slider .slider-bullets-wrap .slider-bullets-item #bullet-5 {
-	background: url("img/1.webp") center no-repeat;
+	background: url("img/way.webp") center no-repeat;
 	background-size: cover;
 }
 #btn-5:checked ~ .slider .slider-bullets-wrap #bullet-6-label {
@@ -209,7 +210,7 @@ h1 {
 #btn-6:checked ~ .slider .slider-bullets-wrap .slider-bullets-item #bullet-4,
 #btn-6:checked ~ .slider .slider-bullets-wrap .slider-bullets-item #bullet-5,
 #btn-6:checked ~ .slider .slider-bullets-wrap .slider-bullets-item #bullet-6 {
-	background: url("img/1.webp") center no-repeat;
+	background: url("img/way.webp") center no-repeat;
 	background-size: cover;
 }
 #btn-2:checked ~ .slider .slider-description-wrap .slider-description,
@@ -235,11 +236,16 @@ h1 {
 #btn-6:checked ~ #audio {
 	display: block;
 }
+@media (max-width: 1700px) {
+	body {
+		background-size: cover;
+
+		height: 100vh;
+	}
+}
 @media (max-width: 769px) {
 	body {
 		height: 100vh;
-		background: url("img/backgrond-media.jpg") no-repeat;
-		background-size: cover;
 	}
 }
 @media (max-width: 670px) {
