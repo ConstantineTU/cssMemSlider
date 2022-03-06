@@ -1,0 +1,299 @@
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,
+*:before,
+*:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,
+:active {
+	outline: none;
+}
+a:focus,
+a:active {
+	outline: none;
+}
+aside,
+nav,
+footer,
+header,
+section {
+	display: block;
+}
+html,
+body {
+	min-width: 19rem;
+	background: url("img/backgrond.webp") repeat-y;
+	background-size: 100% auto;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	width: 100%;
+	color: #fff;
+	flex-wrap: wrap;
+}
+body {
+	line-height: 1;
+	font-family: "Roboto", sans serif;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,
+button,
+textarea {
+	font-family: "Roboto", sans serif;
+}
+input::-ms-clear {
+	display: none;
+}
+button {
+	cursor: pointer;
+}
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+ul li {
+	list-style: none;
+}
+img {
+	vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+h1 {
+	flex: 1 1 100%;
+	font-size: 5rem;
+	text-align: center;
+	align-self: center;
+}
+.slider-wrap {
+	background: url("img/pepe.webp");
+	background-size: contain;
+	border-radius: 2rem;
+	margin: 2rem;
+	overflow: hidden;
+}
+.slider {
+	max-width: 40rem;
+	max-height: 96vh;
+	padding: 1.6rem 2.5rem;
+
+	display: grid;
+	grid-template-columns: 5fr 1fr;
+	grid-template-rows: 7fr 0.5fr 0.001fr;
+	background: #00000080;
+	overflow: hidden;
+	row-gap: 1.5rem;
+}
+.audio {
+	grid-column: 1 / 3;
+	grid-row: 3 / 5;
+	width: 100%;
+	flex: 1 1 100%;
+	margin: 0 auto;
+	background: url("img/pepe.webp");
+	display: none;
+}
+.slider-btn {
+	display: none;
+}
+.slider-pictures-wrap {
+	grid-column: 1 / 3;
+	width: 100%;
+	overflow: hidden;
+	border-radius: 1rem;
+}
+.slider-pictures-items {
+	width: 600%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	transition: all 0.5s;
+}
+.slider-pictures-item {
+	width: calc(100% / 6);
+	height: 100%;
+	object-fit: cover;
+}
+.slider-description-wrap {
+	width: 100%;
+	grid-row: 2 / 4;
+	grid-column: 1/2;
+	overflow: hidden;
+}
+.slider-description {
+	width: 600%;
+	display: flex;
+	margin: 0 auto 0 0;
+	transition: all 0.1s;
+}
+.slider-text {
+	width: calc(100% / 6);
+	color: #fff;
+	font-size: 1.6rem;
+}
+.slider-bullets-wrap {
+	grid-row: 2 / 3;
+	grid-column: 2 / 3;
+	display: flex;
+	transition: all 0.5s;
+	background-color: #00000080;
+	border-radius: 1.5rem;
+	justify-content: space-between;
+}
+.slider-bullets-item {
+	padding: 1rem;
+	cursor: pointer;
+}
+.slider-bullet {
+	width: 1.5rem;
+	height: 1.5rem;
+	background: #262525;
+	border-radius: 50%;
+	border: 0.1rem solid #e21a1a;
+}
+.slider-bullets-item:hover .slider-bullet {
+	background: #fff url("img/mqdefault.webp") center no-repeat;
+	background-size: cover;
+	border: 0.15rem solid #d10fa1;
+}
+.slider-bullets-item:hover #bullet-6 {
+	background: #fff url("img/memes.webp") center no-repeat;
+	background-size: cover;
+	border: 0.2rem solid #14af21;
+}
+.slider-bullets-item:active .slider-bullet {
+	background: #e21a1a url("img/wig.webp") center no-repeat;
+	background-size: cover;
+}
+.slider-bullets-item:active #bullet-6 {
+	animation: lol 2s linear;
+}
+#bullet-6-label {
+	display: none;
+}
+#btn-1:checked ~ .slider .slider-bullets-wrap .slider-bullets-item #bullet-1,
+#btn-2:checked ~ .slider .slider-bullets-wrap .slider-bullets-item #bullet-2,
+#btn-3:checked ~ .slider .slider-bullets-wrap .slider-bullets-item #bullet-3,
+#btn-4:checked ~ .slider .slider-bullets-wrap .slider-bullets-item #bullet-4,
+#btn-5:checked ~ .slider .slider-bullets-wrap .slider-bullets-item #bullet-5 {
+	background: url("img/way.webp") center no-repeat;
+	background-size: cover;
+}
+#btn-5:checked ~ .slider .slider-bullets-wrap #bullet-6-label {
+	display: block;
+}
+#btn-6:checked ~ .slider .slider-bullets-wrap .slider-bullets-item #bullet-1,
+#btn-6:checked ~ .slider .slider-bullets-wrap .slider-bullets-item #bullet-2,
+#btn-6:checked ~ .slider .slider-bullets-wrap .slider-bullets-item #bullet-3,
+#btn-6:checked ~ .slider .slider-bullets-wrap .slider-bullets-item #bullet-4,
+#btn-6:checked ~ .slider .slider-bullets-wrap .slider-bullets-item #bullet-5,
+#btn-6:checked ~ .slider .slider-bullets-wrap .slider-bullets-item #bullet-6 {
+	background: url("img/way.webp") center no-repeat;
+	background-size: cover;
+}
+#btn-2:checked ~ .slider .slider-description-wrap .slider-description,
+#btn-2:checked ~ .slider .slider-pictures-wrap .slider-pictures-items {
+	margin-left: -100%;
+}
+#btn-3:checked ~ .slider .slider-description-wrap .slider-description,
+#btn-3:checked ~ .slider .slider-pictures-wrap .slider-pictures-items {
+	margin-left: -200%;
+}
+#btn-4:checked ~ .slider .slider-description-wrap .slider-description,
+#btn-4:checked ~ .slider .slider-pictures-wrap .slider-pictures-items {
+	margin-left: -300%;
+}
+#btn-5:checked ~ .slider .slider-description-wrap .slider-description,
+#btn-5:checked ~ .slider .slider-pictures-wrap .slider-pictures-items {
+	margin-left: -400%;
+}
+#btn-6:checked ~ .slider .slider-description-wrap .slider-description,
+#btn-6:checked ~ .slider .slider-pictures-wrap .slider-pictures-items {
+	margin-left: -500%;
+}
+#btn-6:checked ~ #audio {
+	display: block;
+}
+@media (max-width: 1700px) {
+	body {
+		background-size: cover;
+	}
+}
+@media (max-width: 1440px) {
+	body {
+		height: 100vh;
+	}
+}
+@media (max-width: 769px) {
+	body {
+		height: 100vh;
+	}
+}
+@media (max-width: 670px) {
+	h1 {
+		font-size: 3rem;
+	}
+	.slider-wrap {
+		margin: 1rem;
+	}
+	.slider {
+		padding: 1rem 1.2rem;
+		grid-template-rows: 7fr 0.5fr 0.5fr;
+	}
+	.audio {
+	}
+	.slider-text {
+		font-size: 1.3rem;
+	}
+	.slider-bullets-wrap {
+		grid-column: 1 / 3;
+	}
+	.slider-description-wrap {
+		grid-row: 3 / 4;
+	}
+}
+@media (max-width: 420px) {
+	h1 {
+		font-size: 2.5rem;
+	}
+	.slider-bullets-item {
+		padding: 0.5rem;
+	}
+	.slider-bullet {
+		width: 1.2rem;
+		height: 1.2rem;
+	}
+	.slider-text {
+		font-size: 1.2rem;
+	}
+}
+@keyframes lol {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
